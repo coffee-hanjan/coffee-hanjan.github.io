@@ -1,0 +1,90 @@
+:root {
+  --text: #2A211B;
+  --bg: #FAF6EF;
+  --textSecondary: #6B5D52;
+  --divider: #EBE3D8;
+  --card: #FFFFFF;
+  --draft: #fff3bf;
+  --draftBorder: #f0c36d;
+  --todo: #ffe066;
+}
+
+html {
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  font-family: system-ui, -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  line-height: 1.7;
+  overflow-x: clip;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 24px 0 16px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 32px 0 8px;
+}
+
+a {
+  color: var(--text);
+}
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.draft {
+  margin: 0;
+  padding: 12px 20px;
+  background: var(--draft);
+  border-bottom: 1px solid var(--draftBorder);
+  color: var(--text);
+  font-size: 14px;
+}
+
+.todo {
+  background: var(--todo);
+  font-weight: 700;
+}
+
+footer {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 16px 20px 40px;
+  border-top: 1px solid var(--divider);
+  color: var(--textSecondary);
+  font-size: 14px;
+}
+
+footer a {
+  margin-right: 16px;
+  color: var(--textSecondary);
+}
+
+table {
+  background: var(--card);
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+summary {
+  cursor: pointer;
+}
